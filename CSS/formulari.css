@@ -1,0 +1,84 @@
+ul{
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    overflow: hidden;
+    list-style-type: none;
+	}
+ul li {
+    float: left;
+    width: 100px;
+}
+ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+form {
+	background-color: gray;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    padding: 35px 40px;
+    max-width: 600px;
+	margin-bottom: 22px;
+    margin-left: 560px;
+}
+fieldset {
+    background-color: red;
+}
+p {
+    font-size: medium;
+    font-style: black;
+    font-weight: bold;
+    
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+legend {
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    box-sizing: border-box;
+}
+textarea {
+    height: 140px;
+    resize: vertical;
+}
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 28px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #333;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+	background-color: black;	
+	text-align: center;
+	padding: 40px;
+	width: 1850px;
+	bottom: 0;
+	left: 0;
+}

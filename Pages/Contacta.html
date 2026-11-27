@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Contacta</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/formulari.css">
 </head>
 <body>
     <ul>
@@ -30,12 +30,120 @@
             <br>
             <button type="submit">Enviar missatge</button>
             <br>
+        <fieldset>
+            <legend>Datos personales</legend>
+       
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo:</label>
+            <input type="email" name="correo" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono">
+
+            <label>Web:</label>
+            <input type="url" name="web">
+
+            <label>Contraseña:</label>
+            <input type="password" name="pass">
+
+            <label>Buscar:</label>
+            <input type="search" name="buscar">
+
+            <input type="hidden" name="oculto" value="123">
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona un paìs</legend>
+       
+            <label>País:</label>
+            <select name="pais">
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="fr">Francia</option>
+                </optgroup>
+                <optgroup label="América">
+                    <option value="ar">Argentina</option>
+                    <option value="mx">México</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Otros datos</legend>
+
+            <label>Edad:</label>
+            <input type="number" name="edad" min="1" max="100" step="1">
+
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha">
+
+            <label>Color del text:</label>
+            <input type="color" name="color">
+
+            <label>Archivo:</label>
+            <input type="file" name="archivo" multiple>
+
+            <p>Aficiones (Checkbox):</p>
+            <input type="checkbox" name="aficion" value="deporte"> Deporte
+            <input type="checkbox" name="aficion" value="musica"> Música
+
+            <p>Género:</p>
+            <input type="radio" name="genero" value="h"> Hombre
+            <input type="radio" name="genero" value="m"> Mujer
+        </fieldset>
+        <fieldset class="bloc-principal">
+                <legend>Perfil tècnic</legend>
+
+                <label for="experiencia">Anys d'experiència</label>
+                <input type="range" id="experiencia" name="experiencia" min="0" max="15" value="2">
+
+                
+                <fieldset class="sub-bloc"></fieldset>
+                    <legend>Llenguatges que domines</legend>
+                    <div class="opcions-linia">
+                        <label><input type="checkbox" name="llenguatges" value="html"> HTML</label>
+                        <label><input type="checkbox" name="llenguatges" value="css"> CSS</label>
+                        <label><input type="checkbox" name="llenguatges" value="js"> JavaScript</label>
+                        <label><input type="checkbox" name="llenguatges" value="php"> PHP</label>
+                        <label><input type="checkbox" name="llenguatges" value="python"> Python</label>
+                        <label><input type="checkbox" name="llenguatges" value="java"> Java</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="sub-bloc">
+                    <legend>Nivell d'anglès</legend>
+                    <div class="opcions-linia">
+                        <label><input type="radio" name="angles" value="a2>"> Menor de A2</label>
+                        <label><input type="radio" name="angles" value="a2"> A2</label>
+                        <label><input type="radio" name="angles" value="b1"> B1</label>
+                        <label><input type="radio" name="angles" value="b2"> B2</label>
+                        <label><input type="radio" name="angles" value="c1"> C1</label>
+                    </div>
+                </fieldset>
+
+                <label for="rols">Rols preferits</label>
+                <select id="rols" name="rols" multiple size="4">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="devops">DevOps</option>
+                    <option value="dades">Dades</option>
+                </select>
+
+                <label for="github">URL de GitHub</label>
+                <input type="url" id="github" name="github" placeholder="https://github.com/usuari">
+            </fieldset>
+
+            <div class="botons">
+                <button type="reset" class="btn-esborrar">Esborra-ho tot</button>
+                <button type="submit" class="btn-enviar">Envia</button>
+            </div>
+
     </form>
-
-
     <footer> 
     <p>© 2026 Aleix Moreno - Tots els drets reservats</p>
     </footer>
+
+
 </body>
 
 </html>
